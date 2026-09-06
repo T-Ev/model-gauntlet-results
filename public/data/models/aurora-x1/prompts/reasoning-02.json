@@ -1,14 +1,14 @@
 {
-  "id": "index-01",
-  "category": "generate_prompt_index",
-  "title": "Prompt index page",
-  "promptRef": "categories/generate_prompt_index/PROMPT.md",
-  "promptExcerpt": "[redacted private prompt] Prompt index page — see private gauntlet pack.",
+  "id": "reasoning-02",
+  "category": "reasoning",
+  "title": "Causal graph critique",
+  "promptRef": "categories/reasoning/PROMPT_02.md",
+  "promptExcerpt": "[redacted private prompt] Causal graph critique — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "<!DOCTYPE html>...",
+  "modelOutput": "issues: reverse causality on X→Y; omitted Z",
   "scores": {
-    "overall": 4.2,
+    "overall": 3.8,
     "dimensions": [
       {
         "id": "d1",
@@ -25,7 +25,7 @@
       {
         "id": "d3",
         "label": "Tertiary",
-        "score": 4,
+        "score": 3,
         "max": 5
       },
       {
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Contract met; good contrast.",
+  "graderNotes": "Called confounders; mild overclaim on DAG.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:00:00-04:00"
 }

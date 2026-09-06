@@ -1,12 +1,12 @@
 {
-  "id": "index-01",
-  "category": "generate_prompt_index",
-  "title": "Prompt index page",
-  "promptRef": "categories/generate_prompt_index/PROMPT.md",
-  "promptExcerpt": "[redacted private prompt] Prompt index page — see private gauntlet pack.",
+  "id": "game-03",
+  "category": "game_design",
+  "title": "Level beat sheet",
+  "promptRef": "categories/game_design/PROMPT_03.md",
+  "promptExcerpt": "[redacted private prompt] Level beat sheet — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "<!DOCTYPE html>...",
+  "modelOutput": "beats: intro→gate→twist→boss teach",
   "scores": {
     "overall": 4.2,
     "dimensions": [
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Contract met; good contrast.",
+  "graderNotes": "Teaching beats clear.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:00:00-04:00"
 }

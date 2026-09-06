@@ -1,14 +1,14 @@
 {
-  "id": "index-01",
-  "category": "generate_prompt_index",
-  "title": "Prompt index page",
-  "promptRef": "categories/generate_prompt_index/PROMPT.md",
-  "promptExcerpt": "[redacted private prompt] Prompt index page — see private gauntlet pack.",
+  "id": "frontend-01",
+  "category": "frontend_design",
+  "title": "Distinctive landing (anti-slop)",
+  "promptRef": "categories/frontend_design/PROMPT_01.md",
+  "promptExcerpt": "[redacted private prompt] Distinctive landing (anti-slop) — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "<!DOCTYPE html>...",
+  "modelOutput": "<!DOCTYPE html>… landing …",
   "scores": {
-    "overall": 4.2,
+    "overall": 4.4,
     "dimensions": [
       {
         "id": "d1",
@@ -31,12 +31,12 @@
       {
         "id": "d4",
         "label": "Quaternary",
-        "score": 4,
+        "score": 5,
         "max": 5
       }
     ]
   },
-  "graderNotes": "Contract met; good contrast.",
+  "graderNotes": "Typography distinctive; a11y ok.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:00:00-04:00"
 }

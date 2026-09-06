@@ -1,14 +1,14 @@
 {
-  "id": "index-01",
-  "category": "generate_prompt_index",
-  "title": "Prompt index page",
-  "promptRef": "categories/generate_prompt_index/PROMPT.md",
-  "promptExcerpt": "[redacted private prompt] Prompt index page — see private gauntlet pack.",
+  "id": "coding-02",
+  "category": "coding",
+  "title": "Debug",
+  "promptRef": "categories/coding/PROMPT_02.md",
+  "promptExcerpt": "[redacted private prompt] Debug — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "<!DOCTYPE html>...",
+  "modelOutput": "bug: off-by-one in window\nfix: clamp end",
   "scores": {
-    "overall": 4.2,
+    "overall": 4.1,
     "dimensions": [
       {
         "id": "d1",
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Contract met; good contrast.",
+  "graderNotes": "Root cause correct first try.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:00:00-04:00"
 }
