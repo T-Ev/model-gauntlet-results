@@ -1,14 +1,14 @@
 {
-  "id": "chem-01",
+  "id": "chem-02",
   "category": "chem_eng_back_of_envelope",
-  "title": "Heat exchanger duty",
-  "promptRef": "categories/chem_eng_back_of_envelope/PROMPT_01.md",
-  "promptExcerpt": "[redacted private prompt] Heat exchanger duty — see private gauntlet pack.",
+  "title": "Reactor sizing Fermi",
+  "promptRef": "categories/chem_eng_back_of_envelope/PROMPT_02.md",
+  "promptExcerpt": "[redacted private prompt] Reactor sizing Fermi — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "duty: 350 kW\ncw_flow: ~20000 kg/h",
+  "modelOutput": "V ≈ 2.4 m³\nτ ≈ 12 min",
   "scores": {
-    "overall": 3.7,
+    "overall": 4.0,
     "dimensions": [
       {
         "id": "d1",
@@ -25,7 +25,7 @@
       {
         "id": "d3",
         "label": "Tertiary",
-        "score": 3,
+        "score": 4,
         "max": 5
       },
       {
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Duty right; area ballpark slightly optimistic.",
+  "graderNotes": "τ and V consistent.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:00:00-04:00"
 }

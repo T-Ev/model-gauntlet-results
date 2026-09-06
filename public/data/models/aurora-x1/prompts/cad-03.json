@@ -1,14 +1,14 @@
 {
-  "id": "chem-01",
-  "category": "chem_eng_back_of_envelope",
-  "title": "Heat exchanger duty",
-  "promptRef": "categories/chem_eng_back_of_envelope/PROMPT_01.md",
-  "promptExcerpt": "[redacted private prompt] Heat exchanger duty — see private gauntlet pack.",
+  "id": "cad-03",
+  "category": "cad_design",
+  "title": "Sheet metal DFM",
+  "promptRef": "categories/cad_design/PROMPT_03.md",
+  "promptExcerpt": "[redacted private prompt] Sheet metal DFM — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "duty: 350 kW\ncw_flow: ~20000 kg/h",
+  "modelOutput": "min flange 2t; relief R=t",
   "scores": {
-    "overall": 3.7,
+    "overall": 3.9,
     "dimensions": [
       {
         "id": "d1",
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Duty right; area ballpark slightly optimistic.",
+  "graderNotes": "Bend reliefs called out.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:00:00-04:00"
 }
