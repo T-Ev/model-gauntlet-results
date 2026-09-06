@@ -1,14 +1,14 @@
 {
-  "id": "vision-01",
-  "category": "vision",
-  "title": "Labeled assembly",
-  "promptRef": "categories/vision/PROMPT_01.md",
-  "promptExcerpt": "[redacted private prompt] Labeled assembly — see private gauntlet pack.",
+  "id": "writing-03",
+  "category": "writing",
+  "title": "Technical memo to city council",
+  "promptRef": "categories/writing/PROMPT_03.md",
+  "promptExcerpt": "[redacted private prompt] Technical memo to city council — see private gauntlet pack.",
   "promptPublic": false,
-  "fixture": "/fixtures/01_labeled_assembly.png",
-  "modelOutput": "callouts: A..F\nswapped B/D",
+  "fixture": null,
+  "modelOutput": "memo: ...\nrecommendation: defer (weak)",
   "scores": {
-    "overall": 3.2,
+    "overall": 3.3,
     "dimensions": [
       {
         "id": "d1",
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Swapped two callouts.",
+  "graderNotes": "Jargon slipped in twice.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:30:00-04:00"
 }

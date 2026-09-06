@@ -1,14 +1,14 @@
 {
-  "id": "vision-01",
+  "id": "vision-02",
   "category": "vision",
-  "title": "Labeled assembly",
-  "promptRef": "categories/vision/PROMPT_01.md",
-  "promptExcerpt": "[redacted private prompt] Labeled assembly — see private gauntlet pack.",
+  "title": "Shift log extraction",
+  "promptRef": "categories/vision/PROMPT_02.md",
+  "promptExcerpt": "[redacted private prompt] Shift log extraction — see private gauntlet pack.",
   "promptPublic": false,
-  "fixture": "/fixtures/01_labeled_assembly.png",
-  "modelOutput": "callouts: A..F\nswapped B/D",
+  "fixture": "/fixtures/02_shift_log_table.png",
+  "modelOutput": "rows: 11\nalarms: 2",
   "scores": {
-    "overall": 3.2,
+    "overall": 3.4,
     "dimensions": [
       {
         "id": "d1",
@@ -19,7 +19,7 @@
       {
         "id": "d2",
         "label": "Secondary",
-        "score": 3,
+        "score": 4,
         "max": 5
       },
       {
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Swapped two callouts.",
+  "graderNotes": "One timestamp off.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:30:00-04:00"
 }
