@@ -1,0 +1,73 @@
+{
+  "slug": "aurora-x1",
+  "displayName": "Aurora X1",
+  "vendor": "Example Labs",
+  "snapshot": "aurora-x1-2026-08-01",
+  "runId": "2026-09-05-sample",
+  "startedAt": "2026-09-05T10:00:00-04:00",
+  "effort": "high",
+  "temperature": 0.2,
+  "notes": "Blind sample pair vs Bramble 2.",
+  "promptIndex": {
+    "path": "prompt-index.html",
+    "authoredByModel": true,
+    "title": "Aurora X1 \u2014 gauntlet index"
+  },
+  "categories": [
+    "chem_eng_back_of_envelope",
+    "generate_prompt_index",
+    "reasoning",
+    "vision",
+    "writing"
+  ],
+  "prompts": [
+    {
+      "id": "writing-01",
+      "title": "Donor letter, constrained voice",
+      "category": "writing",
+      "href": "prompts/writing-01.json",
+      "overall": 4.0,
+      "status": "scored"
+    },
+    {
+      "id": "reasoning-04",
+      "title": "Fermi estimate with bounds",
+      "category": "reasoning",
+      "href": "prompts/reasoning-04.json",
+      "overall": 4.2,
+      "status": "scored"
+    },
+    {
+      "id": "vision-01",
+      "title": "Labeled assembly",
+      "category": "vision",
+      "href": "prompts/vision-01.json",
+      "overall": 3.8,
+      "status": "scored"
+    },
+    {
+      "id": "vision-04",
+      "title": "Chart critique",
+      "category": "vision",
+      "href": "prompts/vision-04.json",
+      "overall": 4.5,
+      "status": "scored"
+    },
+    {
+      "id": "chem-01",
+      "title": "Heat exchanger duty",
+      "category": "chem_eng_back_of_envelope",
+      "href": "prompts/chem-01.json",
+      "overall": 3.7,
+      "status": "scored"
+    },
+    {
+      "id": "index-01",
+      "title": "Prompt index page",
+      "category": "generate_prompt_index",
+      "href": "prompts/index-01.json",
+      "overall": 4.2,
+      "status": "scored"
+    }
+  ]
+}

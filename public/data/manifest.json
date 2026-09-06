@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-05T16:00:00-04:00",
+  "gauntletId": "model-gauntlet",
+  "models": [
+    {
+      "slug": "aurora-x1",
+      "displayName": "Aurora X1",
+      "vendor": "Example Labs",
+      "snapshot": "aurora-x1-2026-08-01",
+      "runId": "2026-09-05-sample",
+      "summaryScore": 3.9,
+      "promptCount": 6,
+      "status": "complete"
+    },
+    {
+      "slug": "bramble-2",
+      "displayName": "Bramble 2",
+      "vendor": "Hedge Computing",
+      "snapshot": "bramble-2-2026-07-15",
+      "runId": "2026-09-05-sample",
+      "summaryScore": 3.5,
+      "promptCount": 6,
+      "status": "complete"
+    }
+  ]
+}
