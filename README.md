@@ -8,9 +8,12 @@ Public site for model gauntlet scores. Private prompts and rubrics live in [`mod
 
 ## Routes
 
-- `/` — model index
+- `/` — model index (pick a run via the dropdown; shareable as `?run=<runId>`)
 - `/models/:slug` — that model’s prompt-index page (authored by the model)
 - `/models/:slug/prompts/:id` — individual prompt result
+
+Model and prompt links preserve `?run=` so deep links stay tied to the selected run.
+Manifest `defaultRunId` / `runs[]` (schema 1.1.0) drive the picker; older flat manifests still work.
 
 ## Stack
 

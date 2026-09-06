@@ -9,10 +9,20 @@ export type ManifestModel = {
   status: string;
 };
 
+export type ManifestRun = {
+  id: string;
+  label: string;
+  generatedAt: string;
+};
+
 export type Manifest = {
   schemaVersion: string;
   generatedAt: string;
   gauntletId: string;
+  /** Preferred run when URL has no ?run= */
+  defaultRunId?: string;
+  /** Catalog of runs for the home picker (optional for backward compat) */
+  runs?: ManifestRun[];
   models: ManifestModel[];
 };
 

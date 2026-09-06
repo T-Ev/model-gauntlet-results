@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import { loadPrompt } from "../lib/api";
+import { Link, useParams, useSearchParams } from "react-router-dom";
+import { loadPrompt, withRunQuery } from "../lib/api";
 import type { PromptResult } from "../lib/types";
 
 export default function PromptPage() {
   const { slug = "", id = "" } = useParams();
+  const [searchParams] = useSearchParams();
+  const runId = searchParams.get("run");
   const [data, setData] = useState<PromptResult | null>(null);
   const [err, setErr] = useState<string | null>(null);
 
@@ -26,7 +28,13 @@ export default function PromptPage() {
   return (
     <article>
       <p className="meta">
-        <Link to={`/models/${slug}`}>← {slug}</Link>
+        <Link to={withRunQuery(`/models/${slug}`, runId)}>← {slug}</Link>
+        {runId ? (
+          <>
+            {" · run "}
+            <code>{runId}</code>
+          </>
+        ) : null}
       </p>
       <p className="pill">{data.category}</p>
       <h2 style={{ marginTop: 0 }}>{data.title}</h2>

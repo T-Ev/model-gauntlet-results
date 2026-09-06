@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import { loadModel, promptIndexUrl } from "../lib/api";
+import { Link, useParams, useSearchParams } from "react-router-dom";
+import { loadModel, promptIndexUrl, withRunQuery } from "../lib/api";
 import type { ModelJson, ModelPromptRef } from "../lib/types";
 
 const MAX_PROMPTS_PER_CATEGORY = 3;
@@ -22,6 +22,8 @@ function groupByCategory(prompts: ModelPromptRef[]): { category: string; prompts
 
 export default function ModelPage() {
   const { slug = "" } = useParams();
+  const [searchParams] = useSearchParams();
+  const runId = searchParams.get("run");
   const [model, setModel] = useState<ModelJson | null>(null);
   const [err, setErr] = useState<string | null>(null);
   const [indexFailed, setIndexFailed] = useState(false);
@@ -40,10 +42,20 @@ export default function ModelPage() {
   if (!model) return <p className="muted">Loading…</p>;
 
   const indexSrc = promptIndexUrl(slug, model.promptIndex?.path ?? "prompt-index.html");
+  const effectiveRun = runId || model.runId;
 
   return (
     <div className="layout-model">
       <section>
+        <p className="meta">
+          <Link to={withRunQuery("/", effectiveRun)}>← All models</Link>
+          {effectiveRun ? (
+            <>
+              {" · run "}
+              <code>{effectiveRun}</code>
+            </>
+          ) : null}
+        </p>
         <p className="pill">{model.vendor}</p>
         <h2 style={{ marginTop: 0 }}>{model.displayName}</h2>
         <p className="meta">
@@ -81,7 +93,7 @@ export default function ModelPage() {
             <ul className="prompt-list">
               {prompts.map((p) => (
                 <li key={p.id}>
-                  <Link to={`/models/${slug}/prompts/${p.id}`}>
+                  <Link to={withRunQuery(`/models/${slug}/prompts/${p.id}`, effectiveRun)}>
                     <span>{p.title}</span>
                     <span className="score" style={{ fontSize: "1.1rem" }}>
                       {p.overall ?? "—"}

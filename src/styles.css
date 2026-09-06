@@ -56,3 +56,42 @@ table.dims th, table.dims td { text-align: left; padding: 0.4rem 0.3rem; border-
   font-weight: 650;
 }
 .category-block .prompt-list li:first-child { border-top: none; }
+
+.run-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  padding: 0.65rem 0.85rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.run-selector {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+.run-label {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.72rem;
+  font-weight: 650;
+}
+.run-selector select {
+  background: #0a0e14;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.35rem 0.55rem;
+  font: inherit;
+  max-width: min(100%, 28rem);
+}
+.run-selector select:focus {
+  outline: 1px solid var(--accent);
+  border-color: var(--accent);
+}
+.run-meta { font-size: 0.8rem; }

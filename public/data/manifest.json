@@ -1,7 +1,20 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "generatedAt": "2026-09-05T16:00:00-04:00",
   "gauntletId": "model-gauntlet",
+  "defaultRunId": "2026-09-05-sample",
+  "runs": [
+    {
+      "id": "2026-09-05-sample",
+      "label": "Sample A/B (2026-09-05)",
+      "generatedAt": "2026-09-05T16:00:00-04:00"
+    },
+    {
+      "id": "2026-09-06-medium",
+      "label": "Overnight medium (pending)",
+      "generatedAt": "2026-09-06T02:00:00-04:00"
+    }
+  ],
   "models": [
     {
       "slug": "aurora-x1",
