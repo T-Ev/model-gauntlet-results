@@ -9,8 +9,8 @@
       "vendor": "Example Labs",
       "snapshot": "aurora-x1-2026-08-01",
       "runId": "2026-09-05-sample",
-      "summaryScore": 3.9,
-      "promptCount": 6,
+      "summaryScore": 4.0,
+      "promptCount": 31,
       "status": "complete"
     },
     {
@@ -19,8 +19,8 @@
       "vendor": "Hedge Computing",
       "snapshot": "bramble-2-2026-07-15",
       "runId": "2026-09-05-sample",
-      "summaryScore": 3.5,
-      "promptCount": 6,
+      "summaryScore": 3.4,
+      "promptCount": 31,
       "status": "complete"
     }
   ]
