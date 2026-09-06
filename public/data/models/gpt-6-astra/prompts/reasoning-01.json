@@ -1,0 +1,42 @@
+{
+  "id": "reasoning-01",
+  "category": "reasoning",
+  "title": "Constraint satisfaction",
+  "promptRef": "categories/reasoning/PROMPT_01.md",
+  "promptExcerpt": "[redacted private prompt] Constraint satisfaction — see private gauntlet pack.",
+  "promptPublic": false,
+  "fixture": null,
+  "modelOutput": "assignment: No valid assignment exists. Forced partial table:\n\n| Seminar | Room | Slot |\n|---|---|---|\n| A | — | S2 |\n| B | R5 | — |\n| C | R3 | — |\n| D | — | S1 |\n| E | — | — |\n\npropagation:\n- Five seminars cannot occupy five distinct slots when only three slots exist.\n- Even allowing shared slots, the room constraints contradict each other:\n- A cannot occupy R1: A is in S2, but R1 requires S3.\n- D cannot occupy R1: D is in S1.\n- B and C cannot occupy R1: they occupy R5 and R3.\n- Therefore E must occupy R1, contradicting constraint 4.\n\nif_unsat: **UNSAT**, both by slot uniqueness and independently by the absence of an eligible occupant for R1.\n\ncheck: Does each constraint permit its seminar to occupy R1?\n\n| Constraint | Yes/no | Reason |\n|---|---|---|\n| 1 | Yes | Alone, does not exclude R1 |\n| 2 | No | C must occupy R3 |\n| 3 | No | D’s S1 conflicts with R1’s S3 |\n| 4 | No | Explicitly excludes E from R1 |\n| 5 | No | A’s S2 conflicts with R1’s S3 |\n| 6 | No | B must occupy R5 |\n| 7 | Yes | Requires the occupant to use S3 |\n| 8 | Yes | Alone, does not exclude R1 |\n| 9 | Yes | E could use S3, but constraint 4 excludes R1 |\n",
+  "scores": {
+    "overall": 0,
+    "dimensions": [
+      {
+        "id": "d1",
+        "label": "Primary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d2",
+        "label": "Secondary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d3",
+        "label": "Tertiary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d4",
+        "label": "Quaternary",
+        "score": 0,
+        "max": 5
+      }
+    ]
+  },
+  "graderNotes": "Provisional placeholder — not human-graded. Scores are not meaningful until graded.",
+  "grader": "auto-placeholder",
+  "scoredAt": "2026-09-06T02:56:37-04:00"
+}

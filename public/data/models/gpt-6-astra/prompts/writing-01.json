@@ -1,0 +1,42 @@
+{
+  "id": "writing-01",
+  "category": "writing",
+  "title": "Donor letter, constrained voice",
+  "promptRef": "categories/writing/PROMPT_01.md",
+  "promptExcerpt": "[redacted private prompt] Donor letter, constrained voice — see private gauntlet pack.",
+  "promptPublic": false,
+  "fixture": null,
+  "modelOutput": "subject: A new place at the bench, thanks to the Hale family\nletter:\nAt the bench beside the window, Lena wiped a line of oil from her thumb and listened as the lathe settled into its steady hum. She had made a small metal cylinder. Then she measured it and discovered she had made a slightly different small metal cylinder.\n\nThank you for your first gift to Harbor Bench Collective. Your $2,400 paid for a used Clausing 13-inch for our teen machine shop. That is a substantial thing to put into the hands of students who are still finding out what they can do with their hands.\n\nA lathe offers a useful kind of honesty. You can explain what you meant to make, but the measuring tool will report what is actually there. For a teenager, that can be frustrating. For an adult, too, though we tend to have longer explanations. Here, students get time to check their work, ask a question, and try again without pretending the first attempt went according to plan.\n\nYour gift gives us another place to teach that patience, along with the careful habits that come before anyone starts a machine. There is instruction, supervision, and plenty of stopping to look closely. The aim is not to hurry students toward a finished object. It is to help them understand their work well enough to take responsibility for it.\n\nI hope you will come by the shop sometime and see the lathe at work. We can arrange a visit when students are here, so you can see the questions and corrections as well as whatever comes off the machine. Please bring questions of your own. You do not need to know anything about machining to belong at the bench.\n\nGifts are tax-deductible to the extent allowed by law; no goods or services were provided.\n\nThank you for giving our students something solid to learn on, and for trusting us with your first gift.\n\nMara Voss  \nFounder  \nHarbor Bench Collective  \nDuluth, MN\n\nword_count: 322\n",
+  "scores": {
+    "overall": 0,
+    "dimensions": [
+      {
+        "id": "d1",
+        "label": "Primary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d2",
+        "label": "Secondary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d3",
+        "label": "Tertiary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d4",
+        "label": "Quaternary",
+        "score": 0,
+        "max": 5
+      }
+    ]
+  },
+  "graderNotes": "Provisional placeholder — not human-graded. Scores are not meaningful until graded.",
+  "grader": "auto-placeholder",
+  "scoredAt": "2026-09-06T02:56:37-04:00"
+}

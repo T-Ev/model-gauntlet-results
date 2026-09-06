@@ -1,0 +1,42 @@
+{
+  "id": "cad-01",
+  "category": "cad_design",
+  "title": "GD&T callouts",
+  "promptRef": "categories/cad_design/PROMPT_01.md",
+  "promptExcerpt": "[redacted private prompt] GD&T callouts — see private gauntlet pack.",
+  "promptPublic": false,
+  "fixture": null,
+  "modelOutput": "**frames**\n\nExample tolerances in mm; confirm against functional requirements.\n\n| Control | Text feature control frame | Application |\n|---|---|---|\n| ø12 hole position | `[POSITION | ⌀0.10 | A | B | C]` | Attach to hole size callout. Locate with boxed **30** basic dimensions from B and C. |\n| Flatness of datum feature A | `[FLATNESS | 0.05]` | Apply to the back surface. No datum references; surface must lie between two parallel planes 0.05 apart. |\n| ø12 axis perpendicularity | `[PERPENDICULARITY | ⌀0.03 | A]` | Attach to hole size callout. Axis must lie within a cylindrical zone 0.03 in diameter, perpendicular to A. |\n\n**notes**\n\n- Use [ASME Y14.5-2018](https://www.asme.org/codes-standards/find-codes-standards/dimensioning-and-tolerancing) as the declared drawing convention.\n- Position and perpendicularity are **regardless of feature size (RFS)**: no MMC/LMC modifiers and no bonus tolerance. Surface flatness has no material-condition modifier.\n- Position already controls orientation to primary datum A. The tighter perpendicularity callout adds an orientation refinement; retain it only if function requires it.\n- Interpret B and C as the actual left and bottom **side surfaces**, identified as datum features, rather than abstract drawing edges.\n- **Process capability review:** confirm capability for H7 bore size, 0.05 flatness, and 0.03 perpendicularity through only 8 mm of thickness. Review workholding distortion and inspection uncertainty before release.\n\n**inspection_hint**\n\nEstablish A primary, B secondary, C tertiary using suitable datum simulators or CMM alignment. Measure the bore at multiple depths to evaluate position and axis orientation. Evaluate A’s flatness independently of the datum alignment, without clamping it flat. Verify H7 size separately with suitable bore metrology.\n\n**open_risks**\n\n- Tolerance values are illustrative; mating-part geometry and fit requirements are unspecified.\n- H7 is an ISO fit designation: identify the applicable size-tolerance standard or give explicit diameter limits.\n- The 30 basic dimension from C assumes nominal vertical centering; tracking the actual midpoint of the plate would require different intent.\n- The M4 pattern lacks its location relative to B/C, thread pitch/class, and tapped depth or through designation.\n- Define the restrained inspection condition if assembly clamping is intended to flatten the plate.\n",
+  "scores": {
+    "overall": 0,
+    "dimensions": [
+      {
+        "id": "d1",
+        "label": "Primary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d2",
+        "label": "Secondary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d3",
+        "label": "Tertiary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d4",
+        "label": "Quaternary",
+        "score": 0,
+        "max": 5
+      }
+    ]
+  },
+  "graderNotes": "Provisional placeholder — not human-graded. Scores are not meaningful until graded.",
+  "grader": "auto-placeholder",
+  "scoredAt": "2026-09-06T02:56:37-04:00"
+}

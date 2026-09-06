@@ -1,0 +1,42 @@
+{
+  "id": "bible-01",
+  "category": "bible_knowledge",
+  "title": "Synoptic difference (recall + care)",
+  "promptRef": "categories/bible_knowledge/PROMPT_01.md",
+  "promptExcerpt": "[redacted private prompt] Synoptic difference (recall + care) — see private gauntlet pack.",
+  "promptPublic": false,
+  "fixture": null,
+  "modelOutput": "mark: Addressing Jesus as “Good Teacher,” the man asks what he must do to inherit eternal life. Jesus questions calling him good, identifies God alone as good, recalls commandments, then identifies one remaining lack: sell his possessions, give to the poor, and follow him. ([10:17–22, NRSVUE](https://www.biblegateway.com/passage/?search=Mark+10:17-22&version=NRSVUE))\n\nmatthew: Addressing Jesus as “Teacher,” he asks what good deed would obtain eternal life. Jesus questions his inquiry about goodness and directs him to keep commandments. When the young man asks what remains lacking, Jesus introduces selling, giving, and following with “If you wish to be perfect.” ([19:16–22, NRSVUE](https://www.biblegateway.com/passage/?search=Matthew+19:16-22&version=NRSVUE))\n\nluke: A ruler addresses Jesus as “Good Teacher” and asks what he must do to inherit eternal life. Jesus responds about goodness and commandments as in Mark, then tells him the remaining requirement: sell everything, distribute to the poor, and follow him. ([18:18–23, NRSVUE](https://www.biblegateway.com/passage/?search=Luke+18:18-23&version=NRSVUE))\n\nunique_detail: Only Mark explicitly says Jesus looked at the man and loved him (10:21). ([Mark](https://www.biblegateway.com/passage/?search=Mark+10:21&version=NRSVUE))\n\ninterpretive_note: These comparisons follow the NRSVUE wording. A fair reader should preserve each account’s emphasis without assuming that differences prove error or that harmonization explains every difference. These passages alone do not settle debates about Jesus’ identity, faith and works, or whether every disciple must sell every possession. Such conclusions require broader textual and interpretive arguments.\n",
+  "scores": {
+    "overall": 0,
+    "dimensions": [
+      {
+        "id": "d1",
+        "label": "Primary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d2",
+        "label": "Secondary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d3",
+        "label": "Tertiary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d4",
+        "label": "Quaternary",
+        "score": 0,
+        "max": 5
+      }
+    ]
+  },
+  "graderNotes": "Provisional placeholder — not human-graded. Scores are not meaningful until graded.",
+  "grader": "auto-placeholder",
+  "scoredAt": "2026-09-06T02:56:37-04:00"
+}

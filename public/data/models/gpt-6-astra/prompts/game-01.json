@@ -1,0 +1,42 @@
+{
+  "id": "game-01",
+  "category": "game_design",
+  "title": "Core loop",
+  "promptRef": "categories/game_design/PROMPT_01.md",
+  "promptExcerpt": "[redacted private prompt] Core loop — see private gauntlet pack.",
+  "promptPublic": false,
+  "fixture": null,
+  "modelOutput": "## fantasy\n\nYou and a friend run the only diner open during a space station’s night shift. Serve homesick aliens, improvise around faulty gravity, and keep the counter welcoming while the kitchen becomes a disaster.\n\nA **30-minute shift** moves from quiet opening to breakfast rush. The pleasure is turning shouted requests into coordinated action: “Float me the noodles!” “Catch first, garnish second!”\n\n## loop_diagram\n\n```text\nSeat arrivals and decode preferences\n                  ↓\nAgree on orders, priorities, and substitutions\n                  ↓\nCook dishes ←→ Prepare tables, drinks, and delivery routes\n                  ↓\nPass food through the shared service hatch\n                  ↓\nServe → earn credits and regular-customer goodwill\n                  ↓\nClear messes → restock → choose the next orders\n                  ↺\n       Station mishaps remix the loop\n```\n\n**Shift structure:** 3 minutes learning → 9 minutes service → 2-minute handover and role swap → 11-minute escalating service → 5-minute final orders and diner recap.\n\nAt handover, each player explains one outstanding order and one equipment quirk. Swap stations, tools, and responsibilities; accumulated mess and customer relationships carry forward.\n\n## roles\n\n| | Kitchen: cook | Floor: host |\n|---|---|---|\n| **Responsibility** | Turn ingredients into correctly timed dishes. | Translate customer needs into a workable service plan. |\n| **Verbs** | Chop, fry, combine, plate, slide, salvage. | Seat, interpret, queue, pour, serve, soothe, clear. |\n| **Decisions** | Batch dishes or finish one? Salvage a mistake or start fresh? | Seat another party or catch up? Spend goodwill buying time or save it? |\n| **Needs partner for** | Order priorities, clean plates, counter-side garnishes. | Hot food, safe substitutions, kitchen timing. |\n\n**Inputs:** Two controllers, shared camera. Left stick moves; A interacts or operates a station; X picks up/drops; B slides a held item; Y pings a target. Holding an item visibly previews its slide path. No mandatory voice input.\n\nThe host places pictogram order tickets on a shared rail; the cook marks dishes ready. Both can see all information, but their stations provide different capabilities. Counter-side garnishing gives the host something useful to do while food cooks; batch prep keeps the cook active while customers eat.\n\n## resources\n\n- **Ingredients:** Limited opening stock. Credits buy small resupply crates; basic nutrient batter is always available.\n- **Credits:** Earned from service; spent on ingredients or quick equipment fixes. An empty till never ends the run.\n- **Clean plates:** A circulating bottleneck. The host returns and washes them; the cook chooses whether to wait or use a less profitable takeaway carton.\n- **Customer patience:** Visible per table. Drinks, honest substitutions, and entertaining mishaps can extend it.\n- **Goodwill:** Earned by satisfying preferences; spent persuading a table to accept a late or unusual meal.\n\nTime and counter space create pressure. There is no player health, hunger meter, or permanent progression requirement.\n\n## fail_forward\n\n**Mistakes change the job before they reduce the score.**\n\n- Burned food becomes “meteor-charred.” The host can offer it to a smoke-loving customer or serve a quick replacement.\n- Dropped soup becomes a floating blob during low gravity. Catch it in a fresh bowl for recovery and a customer laugh; otherwise it becomes a small cleanup task.\n- An overloaded grill shuts down briefly. The cook uses a slower emergency hotplate while the host offers cold sides.\n- An impatient table leaves a sarcastic review and forfeits its remaining payout. It frees space immediately; no cascading penalty.\n\nPrevent deliberate mistake farming: recovered dishes pay at most their original value. Cap active hazards at two, and clear unresolved hazards at handover so one rough opening cannot spoil the whole session.\n\nEvery shift reaches a recap with earnings, satisfied tables, and comic awards such as **Longest Unscheduled Soup Flight**. No lives, forced restart, or lost unlocks. Sell as a complete game; no live-service monetization.\n\n## vertical_slice_goals\n\n**Build:** One shared-screen diner, two stations, three recipes, three customer preference types, one low-gravity event, salvage and cleanup, a mandatory mid-run swap, and a complete 30-minute shift.\n\n**The 3-minute “why this is fun” test:**\n\n- **0:00–0:45:** Host identifies a customer’s preference and posts an order; cook starts the base dish.\n- **0:45–1:30:** Cook slides it across; host adds the requested garnish and serves it. Both see the payoff.\n- **1:30–2:15:** Low gravity interrupts the second order. One player catches drifting food while the other makes room and manages the waiting table.\n- **2:15–3:00:** They recover, deliver, and choose whether to accept two simultaneous orders.\n\n**Pass criteria:** In at least four of five first-time pairs, both players contribute to a delivery within 90 seconds, recover the mishap without facilitator help, and can explain why they needed their partner. Neither player should spend more than 15 consecutive seconds without a useful action.\n\nFor the full shift, verify that pairs complete the role swap within two minutes and can resume service without a second tutorial. Tune for most mistakes to produce a recovery opportunity, with occasional lost payouts preserving stakes.\n",
+  "scores": {
+    "overall": 0,
+    "dimensions": [
+      {
+        "id": "d1",
+        "label": "Primary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d2",
+        "label": "Secondary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d3",
+        "label": "Tertiary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d4",
+        "label": "Quaternary",
+        "score": 0,
+        "max": 5
+      }
+    ]
+  },
+  "graderNotes": "Provisional placeholder — not human-graded. Scores are not meaningful until graded.",
+  "grader": "auto-placeholder",
+  "scoredAt": "2026-09-06T02:56:37-04:00"
+}

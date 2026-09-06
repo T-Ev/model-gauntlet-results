@@ -1,0 +1,42 @@
+{
+  "id": "tools-01",
+  "category": "tool_use_planning",
+  "title": "Research plan",
+  "promptRef": "categories/tool_use_planning/PROMPT_01.md",
+  "promptExcerpt": "[redacted private prompt] Research plan — see private gauntlet pack.",
+  "promptPublic": false,
+  "fixture": null,
+  "modelOutput": "## plan\n\n1. **Discover internal requirements and evidence — parallel group A.**\n   - `docs.retrieve(company_intranet)` with queries:\n     - `\"inventory ERP module warehouse workflows pain points stock accuracy stockouts picking receiving cycle counts\"`\n     - `\"ERP inventory architecture integrations manufacturing MES MRP BOM lot serial traceability\"`\n     - `\"warehouse transaction volumes users sites peak throughput uptime internet outages\"`\n     - `\"ERP inventory licensing support infrastructure costs renewal end of support\"`\n     - `\"hosted software procurement security data residency disaster recovery requirements\"`\n   - Request document dates, owners, and source references. These are discovery queries, not claims that documents exist.\n   - **Stop condition:** Relevant sources retrieved or searches exhausted. Record missing evidence; ask the business owner for essential gaps before making a firm recommendation.\n\n2. **Research the 2026 market and decision criteria — parallel group A, alongside step 1.**\n   - `web.search` inputs:\n     - `\"2026 hosted WMS manufacturing ERP integration inventory production material replenishment\"`\n     - `\"cloud WMS manufacturing pricing implementation integration costs\"`\n     - `\"hosted WMS offline operations SLA disaster recovery data export security\"`\n   - Prioritize current vendor documentation for capabilities and contractual terms, and independent evidence for implementation outcomes.\n   - **Stop condition:** Identify two or three plausible hosted options and evidence for retaining or upgrading the ERP module. Record publication dates and distinguish advertised capabilities from verified fit.\n\n3. **Resolve fit and validate sources — parallel group B, dependent on steps 1–2.**\n   - `web.fetch` inputs: Exact URLs returned by search for shortlisted products’ integration documentation, manufacturing workflows, pricing, SLA, security, recovery, and exit/export terms.\n   - `docs.retrieve(company_intranet)` inputs: Targeted queries using the actual ERP/version, required workflows, and policy names discovered in step 1.\n   - `web.search` inputs: Follow-up queries combining that ERP/version with shortlisted WMS names and required capabilities; use only nonsensitive terms.\n   - **Stop condition:** Each critical requirement has a sourced fit assessment or an explicit “unverified.” Eliminate options with confirmed failures on mandatory requirements. Do not treat missing public pricing as a quote.\n\n4. **Analyze economics and operational impact — dependent on step 3.**\n   - `spreadsheet.analyze` inputs: Retrieved cost and operating data, sourced vendor prices where available, and explicitly labeled assumptions.\n   - Compare retain/upgrade versus hosted WMS over five years. Include subscriptions, implementation, integrations, data cleanup, devices/network, training, parallel operation, ongoing support, retained ERP costs, decommissioning, and exit costs.\n   - Calculate total cost, incremental cash flows, payback, and sensitivity to implementation overruns, subscription increases, adoption, and benefits. Use the company’s discount rate if available.\n   - **Stop condition:** Reconciled calculations and low/base/high scenarios. If reliable inputs are absent, provide a break-even analysis and evidence gaps rather than a precise ROI.\n\n5. **Draft the two-page brief — dependent on steps 3–4; no tool required.**\n   - Page 1: Recommendation—replace, retain, or pilot—business rationale, mandatory fit requirements, and comparison.\n   - Page 2: Economics, implementation risks, decision gates, and next steps.\n   - Cite sources, date the assessment, distinguish facts from assumptions, and explain which manufacturing functions remain in ERP.\n   - **Stop condition:** Two pages at the agreed layout, with a defensible recommendation and clear conditions that could change it.\n\n6. **Optional review handoff — only if requested.**\n   - `email.draft` inputs: User-confirmed recipients, subject, brief, and unresolved decision questions. Draft only.\n   - `calendar.schedule` inputs: User-approved attendees, time, duration, and agenda.\n   - **Stop condition:** Draft prepared; meeting scheduled only after approval. Neither action is required to complete the brief.\n\n## approvals\n\n- No additional approval for authorized read-only research, analysis, or writing.\n- Human approval required before scheduling a meeting or sending email. The available email tool cannot send.\n- Obtain authorization before exposing confidential company information externally. Use generic public searches by default.\n- Procurement, vendor outreach, system changes, and migration are outside this research plan.\n\n## done_when\n\nThe two-page brief answers whether to replace the module in 2026, supports its conclusion with traceable evidence and scenario economics, and identifies unresolved requirements and decision gates. Insufficient evidence leads to a conditional recommendation.\n\n## risks\n\n- Hosted WMS may not replace ERP manufacturing, planning, costing, or inventory accounting functions.\n- Vendor claims, undisclosed pricing, and dated sources can distort comparisons.\n- Integration, migration, downtime, connectivity, and adoption costs may outweigh savings.\n- Missing internal baselines can inflate benefits or create false financial precision.\n- Security, residency, recovery, and data-export constraints may disqualify otherwise attractive options.\n",
+  "scores": {
+    "overall": 0,
+    "dimensions": [
+      {
+        "id": "d1",
+        "label": "Primary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d2",
+        "label": "Secondary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d3",
+        "label": "Tertiary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d4",
+        "label": "Quaternary",
+        "score": 0,
+        "max": 5
+      }
+    ]
+  },
+  "graderNotes": "Provisional placeholder — not human-graded. Scores are not meaningful until graded.",
+  "grader": "auto-placeholder",
+  "scoredAt": "2026-09-06T02:56:37-04:00"
+}

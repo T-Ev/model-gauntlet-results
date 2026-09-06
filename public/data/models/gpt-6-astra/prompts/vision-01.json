@@ -1,0 +1,42 @@
+{
+  "id": "vision-01",
+  "category": "vision",
+  "title": "Labeled assembly",
+  "promptRef": "categories/vision/PROMPT_01.md",
+  "promptExcerpt": "[redacted private prompt] Labeled assembly — see private gauntlet pack.",
+  "promptPublic": false,
+  "fixture": "fixtures/vision/assembly_labels.png",
+  "modelOutput": "**callouts**\n- A: Motor feet 4x M12\n- B: Flexible coupling\n- C: Impeller housing\n- D: Discharge, 2-in 150#\n- E: Suction, 3-in 150#\n- F: Baseplate BP-12\n- G: Anchor bolts 5/8\"\n\n**connections**\n- Discharge: 2-in, 150#; BOM specifies RF flange, Class 150.\n- Suction: 3-in, 150#.\n\n**omitted**: Coupling guard omitted from this view.\n\n**rotation**: “Rotation: clockwise facing motor NDE.”\n\n**uncertainty**: None; all requested labels are readable.\n",
+  "scores": {
+    "overall": 0,
+    "dimensions": [
+      {
+        "id": "d1",
+        "label": "Primary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d2",
+        "label": "Secondary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d3",
+        "label": "Tertiary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d4",
+        "label": "Quaternary",
+        "score": 0,
+        "max": 5
+      }
+    ]
+  },
+  "graderNotes": "Provisional placeholder — not human-graded. Scores are not meaningful until graded.",
+  "grader": "auto-placeholder",
+  "scoredAt": "2026-09-06T02:56:37-04:00"
+}

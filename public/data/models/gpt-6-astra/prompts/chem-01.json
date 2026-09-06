@@ -1,0 +1,42 @@
+{
+  "id": "chem-01",
+  "category": "chem_eng_back_of_envelope",
+  "title": "Heat exchanger duty",
+  "promptRef": "categories/chem_eng_back_of_envelope/PROMPT_01.md",
+  "promptExcerpt": "[redacted private prompt] Heat exchanger duty — see private gauntlet pack.",
+  "promptPublic": false,
+  "fixture": null,
+  "modelOutput": "duty\nQ = m_hot × cp_hot × (T_in − T_out)\n  = (12,000 kg/h) × (2.1 kJ/kg·K) × (95 − 45 K)\n  = 1,260,000 kJ/h ÷ 3,600 s/h\n  = 350 kW.\n\ncw_flow\nMinimum flow uses the maximum permitted CW outlet temperature, 40°C.\nm_CW = Q / (cp_water × ΔT_water)\n     = 1,260,000 kJ/h / (4.18 kJ/kg·K × 15 K)\n     ≈ 20,100 kg/h.\n\narea_ballpark\nUsing the supplied ΔT_lm ≈ 20 K as the effective driving force:\nA = Q / (U × ΔT_lm)\n  = 350,000 W / (400 W/m²·K × 20 K)\n  ≈ 44 m².\nYes—a 1-shell-pass/2-tube-pass exchanger with area in the tens of m² is in the right ballpark.\n\nassumptions\nSteady state; sensible cooling only; constant heat capacities; negligible heat loss. Water cp ≈ 4.18 kJ/kg·K. Allow roughly 10–20% uncertainty for this napkin estimate; area uncertainty can be larger if U is poorly known.\n\nflags\nThe terminal differences are 55 K and 20 K, giving countercurrent LMTD = (55 − 20)/ln(55/20) ≈ 34.6 K. A 1–2 exchanger requires a correction factor F: A = Q/(U × F × LMTD). Thus, 20 K is a conservative effective assumption, not the calculated countercurrent LMTD. Confirm correction factor, fouling allowance, and pressure drops during sizing.\n",
+  "scores": {
+    "overall": 0,
+    "dimensions": [
+      {
+        "id": "d1",
+        "label": "Primary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d2",
+        "label": "Secondary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d3",
+        "label": "Tertiary",
+        "score": 0,
+        "max": 5
+      },
+      {
+        "id": "d4",
+        "label": "Quaternary",
+        "score": 0,
+        "max": 5
+      }
+    ]
+  },
+  "graderNotes": "Provisional placeholder — not human-graded. Scores are not meaningful until graded.",
+  "grader": "auto-placeholder",
+  "scoredAt": "2026-09-06T02:56:37-04:00"
+}
