@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-09-05T16:00:00-04:00",
+  "generatedAt": "2026-09-06T02:56:37-04:00",
   "gauntletId": "model-gauntlet",
-  "defaultRunId": "2026-09-05-sample",
+  "defaultRunId": "2026-09-06-medium",
   "runs": [
     {
       "id": "2026-09-05-sample",
@@ -11,8 +11,8 @@
     },
     {
       "id": "2026-09-06-medium",
-      "label": "Overnight medium (pending)",
-      "generatedAt": "2026-09-06T02:00:00-04:00"
+      "label": "Overnight medium (2026-09-06) — provisional",
+      "generatedAt": "2026-09-06T02:56:37-04:00"
     }
   ],
   "models": [
@@ -35,6 +35,26 @@
       "summaryScore": 3.4,
       "promptCount": 31,
       "status": "complete"
+    },
+    {
+      "slug": "gpt-6-astra",
+      "displayName": "GPT-6 Astra",
+      "vendor": "OpenAI",
+      "snapshot": "gpt-6-astra",
+      "runId": "2026-09-06-medium",
+      "summaryScore": null,
+      "promptCount": 10,
+      "status": "provisional"
+    },
+    {
+      "slug": "claude-fable-5-1",
+      "displayName": "Claude Fable 5.1",
+      "vendor": "Anthropic",
+      "snapshot": "claude-fable-5-1",
+      "runId": "2026-09-06-medium",
+      "summaryScore": null,
+      "promptCount": 10,
+      "status": "error"
     }
   ]
 }

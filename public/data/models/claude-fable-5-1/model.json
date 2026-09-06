@@ -1,0 +1,23 @@
+{
+  "slug": "claude-fable-5-1",
+  "displayName": "Claude Fable 5.1",
+  "vendor": "Anthropic",
+  "snapshot": "claude-fable-5-1",
+  "runId": "2026-09-06-medium",
+  "startedAt": "2026-09-06T02:56:23-04:00",
+  "effort": "medium",
+  "notes": "All 10 overnight prompts failed in the Claude Code harness (`claude -p`); stderr files were empty. Re-run needed once CLI/auth is fixed.",
+  "categories": ["writing", "reasoning", "coding", "bible_knowledge", "frontend_design", "game_design", "cad_design", "chem_eng_back_of_envelope", "tool_use_planning", "vision"],
+  "prompts": [
+    {"id": "writing-01", "title": "Donor letter, constrained voice", "category": "writing", "href": "prompts/writing-01.json", "overall": null, "status": "error"},
+    {"id": "reasoning-01", "title": "Constraint satisfaction", "category": "reasoning", "href": "prompts/reasoning-01.json", "overall": null, "status": "error"},
+    {"id": "coding-01", "title": "Implement from spec", "category": "coding", "href": "prompts/coding-01.json", "overall": null, "status": "error"},
+    {"id": "bible-01", "title": "Synoptic difference (recall + care)", "category": "bible_knowledge", "href": "prompts/bible-01.json", "overall": null, "status": "error"},
+    {"id": "frontend-01", "title": "Distinctive landing (anti-slop)", "category": "frontend_design", "href": "prompts/frontend-01.json", "overall": null, "status": "error"},
+    {"id": "game-01", "title": "Core loop", "category": "game_design", "href": "prompts/game-01.json", "overall": null, "status": "error"},
+    {"id": "cad-01", "title": "GD&T callouts", "category": "cad_design", "href": "prompts/cad-01.json", "overall": null, "status": "error"},
+    {"id": "chem-01", "title": "Heat exchanger duty", "category": "chem_eng_back_of_envelope", "href": "prompts/chem-01.json", "overall": null, "status": "error"},
+    {"id": "tools-01", "title": "Research plan", "category": "tool_use_planning", "href": "prompts/tools-01.json", "overall": null, "status": "error"},
+    {"id": "vision-01", "title": "Labeled assembly", "category": "vision", "href": "prompts/vision-01.json", "overall": null, "status": "error"}
+  ]
+}
