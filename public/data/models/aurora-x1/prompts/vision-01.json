@@ -1,0 +1,42 @@
+{
+  "id": "vision-01",
+  "category": "vision",
+  "title": "Labeled assembly",
+  "promptRef": "categories/vision/PROMPT.md",
+  "promptExcerpt": "[redacted private prompt] Labeled assembly \u2014 see private gauntlet pack.",
+  "promptPublic": false,
+  "fixture": "/fixtures/01_labeled_assembly.png",
+  "modelOutput": "callouts: A..G matched\nomitted: coupling guard",
+  "scores": {
+    "overall": 3.8,
+    "dimensions": [
+      {
+        "id": "d1",
+        "label": "Primary",
+        "score": 4,
+        "max": 5
+      },
+      {
+        "id": "d2",
+        "label": "Secondary",
+        "score": 3,
+        "max": 5
+      },
+      {
+        "id": "d3",
+        "label": "Tertiary",
+        "score": 3,
+        "max": 5
+      },
+      {
+        "id": "d4",
+        "label": "Quaternary",
+        "score": 4,
+        "max": 5
+      }
+    ]
+  },
+  "graderNotes": "Missed one BOM line; callouts A\u2013G correct.",
+  "grader": "TJ",
+  "scoredAt": "2026-09-05T18:00:00-04:00"
+}

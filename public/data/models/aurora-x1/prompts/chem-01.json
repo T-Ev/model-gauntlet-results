@@ -1,0 +1,42 @@
+{
+  "id": "chem-01",
+  "category": "chem_eng_back_of_envelope",
+  "title": "Heat exchanger duty",
+  "promptRef": "categories/chem_eng_back_of_envelope/PROMPT.md",
+  "promptExcerpt": "[redacted private prompt] Heat exchanger duty \u2014 see private gauntlet pack.",
+  "promptPublic": false,
+  "fixture": null,
+  "modelOutput": "duty: 350 kW\ncw_flow: ~20000 kg/h",
+  "scores": {
+    "overall": 3.7,
+    "dimensions": [
+      {
+        "id": "d1",
+        "label": "Primary",
+        "score": 4,
+        "max": 5
+      },
+      {
+        "id": "d2",
+        "label": "Secondary",
+        "score": 3,
+        "max": 5
+      },
+      {
+        "id": "d3",
+        "label": "Tertiary",
+        "score": 3,
+        "max": 5
+      },
+      {
+        "id": "d4",
+        "label": "Quaternary",
+        "score": 4,
+        "max": 5
+      }
+    ]
+  },
+  "graderNotes": "Duty right; area ballpark slightly optimistic.",
+  "grader": "TJ",
+  "scoredAt": "2026-09-05T18:00:00-04:00"
+}

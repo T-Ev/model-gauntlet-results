@@ -1,0 +1,42 @@
+{
+  "id": "reasoning-04",
+  "category": "reasoning",
+  "title": "Fermi estimate with bounds",
+  "promptRef": "categories/reasoning/PROMPT.md",
+  "promptExcerpt": "[redacted private prompt] Fermi estimate with bounds \u2014 see private gauntlet pack.",
+  "promptPublic": false,
+  "fixture": null,
+  "modelOutput": "base: 4.2e6 trips/day\nlow: 1.1e6\nhigh: 1.3e7",
+  "scores": {
+    "overall": 4.2,
+    "dimensions": [
+      {
+        "id": "d1",
+        "label": "Primary",
+        "score": 4,
+        "max": 5
+      },
+      {
+        "id": "d2",
+        "label": "Secondary",
+        "score": 4,
+        "max": 5
+      },
+      {
+        "id": "d3",
+        "label": "Tertiary",
+        "score": 4,
+        "max": 5
+      },
+      {
+        "id": "d4",
+        "label": "Quaternary",
+        "score": 4,
+        "max": 5
+      }
+    ]
+  },
+  "graderNotes": "Clear factor tree; fragile tourism assumption noted.",
+  "grader": "TJ",
+  "scoredAt": "2026-09-05T18:00:00-04:00"
+}
