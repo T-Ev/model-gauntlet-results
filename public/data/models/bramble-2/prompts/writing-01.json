@@ -1,0 +1,42 @@
+{
+  "id": "writing-01",
+  "category": "writing",
+  "title": "Donor letter, constrained voice",
+  "promptRef": "categories/writing/PROMPT.md",
+  "promptExcerpt": "[redacted private prompt] Donor letter, constrained voice \u2014 see private gauntlet pack.",
+  "promptPublic": false,
+  "fixture": null,
+  "modelOutput": "subject: Lathe arrived \u2014 thank you from Harbor Bench\nletter: ...\nword_count: 418\n(bramble variant)",
+  "scores": {
+    "overall": 3.4,
+    "dimensions": [
+      {
+        "id": "d1",
+        "label": "Primary",
+        "score": 3,
+        "max": 5
+      },
+      {
+        "id": "d2",
+        "label": "Secondary",
+        "score": 3,
+        "max": 5
+      },
+      {
+        "id": "d3",
+        "label": "Tertiary",
+        "score": 3,
+        "max": 5
+      },
+      {
+        "id": "d4",
+        "label": "Quaternary",
+        "score": 3,
+        "max": 5
+      }
+    ]
+  },
+  "graderNotes": "Used banned word 'excited' once; otherwise fine.",
+  "grader": "TJ",
+  "scoredAt": "2026-09-05T18:30:00-04:00"
+}
