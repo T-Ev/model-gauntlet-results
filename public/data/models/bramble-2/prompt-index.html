@@ -9,8 +9,9 @@
   body { margin:0; font-family: "Source Serif 4", "Times New Roman", Times, serif; background:var(--bg); color:var(--ink); }
   main { max-width:740px; margin:0 auto; padding:2.5rem 1.25rem; }
   h1 { font-size:2rem; margin-bottom:0.5rem; }
+  h2 { font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--accent); margin:1.5rem 0 0.4rem; }
   p { color:var(--muted); }
-  ul { list-style:none; padding:0; }
+  ul { list-style:none; padding:0; margin:0; }
   li { background:var(--card); margin:0.6rem 0; border:1px solid #d6d3d1; border-radius:10px; }
   a { display:block; padding:0.85rem 1rem; color:var(--ink); text-decoration:none; }
   a:focus, a:hover { box-shadow: inset 0 0 0 2px var(--accent); }
@@ -20,13 +21,69 @@
 <body>
 <main>
   <h1>Bramble 2 — gauntlet index</h1>
-  <p>Sample run for site development. Same prompts as Aurora X1 so the A/B pages can be compared side by side.</p>
+  <p>Expanded sample run aligned with Aurora X1: three prompts per category plus this index, so A/B pages stay comparable.</p>
+  <h2>writing</h2>
   <ul>
-    <li><a href="./prompts/writing-01">writing-01 — Donor letter <code>writing-01</code></a></li>
-    <li><a href="./prompts/reasoning-04">reasoning-04 — Fermi Manhattan elevators <code>reasoning-04</code></a></li>
-    <li><a href="./prompts/vision-01">vision-01 — Pump skid labels <code>vision-01</code></a></li>
-    <li><a href="./prompts/vision-04">vision-04 — Misleading defect chart <code>vision-04</code></a></li>
-    <li><a href="./prompts/chem-01">chem-01 — Cooler duty <code>chem-01</code></a></li>
+    <li><a href="./prompts/writing-01">writing-01 — Donor letter, constrained voice <code>writing-01</code></a></li>
+    <li><a href="./prompts/writing-02">writing-02 — Steelman both sides <code>writing-02</code></a></li>
+    <li><a href="./prompts/writing-03">writing-03 — Technical memo to city council <code>writing-03</code></a></li>
+  </ul>
+  <h2>reasoning</h2>
+  <ul>
+    <li><a href="./prompts/reasoning-01">reasoning-01 — Constraint satisfaction <code>reasoning-01</code></a></li>
+    <li><a href="./prompts/reasoning-02">reasoning-02 — Causal graph critique <code>reasoning-02</code></a></li>
+    <li><a href="./prompts/reasoning-04">reasoning-04 — Fermi estimate with bounds <code>reasoning-04</code></a></li>
+  </ul>
+  <h2>coding</h2>
+  <ul>
+    <li><a href="./prompts/coding-01">coding-01 — Implement from spec <code>coding-01</code></a></li>
+    <li><a href="./prompts/coding-02">coding-02 — Debug <code>coding-02</code></a></li>
+    <li><a href="./prompts/coding-03">coding-03 — API design <code>coding-03</code></a></li>
+  </ul>
+  <h2>bible_knowledge</h2>
+  <ul>
+    <li><a href="./prompts/bible-01">bible-01 — Synoptic difference (recall + care) <code>bible-01</code></a></li>
+    <li><a href="./prompts/bible-02">bible-02 — Prophetic critique (interpretation) <code>bible-02</code></a></li>
+    <li><a href="./prompts/bible-03">bible-03 — Pauline argument structure <code>bible-03</code></a></li>
+  </ul>
+  <h2>frontend_design</h2>
+  <ul>
+    <li><a href="./prompts/frontend-01">frontend-01 — Distinctive landing (anti-slop) <code>frontend-01</code></a></li>
+    <li><a href="./prompts/frontend-02">frontend-02 — Component API <code>frontend-02</code></a></li>
+    <li><a href="./prompts/frontend-03">frontend-03 — Accessibility remediation plan <code>frontend-03</code></a></li>
+  </ul>
+  <h2>game_design</h2>
+  <ul>
+    <li><a href="./prompts/game-01">game-01 — Core loop <code>game-01</code></a></li>
+    <li><a href="./prompts/game-02">game-02 — Economy <code>game-02</code></a></li>
+    <li><a href="./prompts/game-03">game-03 — Level beat sheet <code>game-03</code></a></li>
+  </ul>
+  <h2>cad_design</h2>
+  <ul>
+    <li><a href="./prompts/cad-01">cad-01 — GD&T callouts <code>cad-01</code></a></li>
+    <li><a href="./prompts/cad-02">cad-02 — Mechanism concept <code>cad-02</code></a></li>
+    <li><a href="./prompts/cad-03">cad-03 — Sheet metal DFM <code>cad-03</code></a></li>
+  </ul>
+  <h2>chem_eng_back_of_envelope</h2>
+  <ul>
+    <li><a href="./prompts/chem-01">chem-01 — Heat exchanger duty <code>chem-01</code></a></li>
+    <li><a href="./prompts/chem-02">chem-02 — Reactor sizing Fermi <code>chem-02</code></a></li>
+    <li><a href="./prompts/chem-03">chem-03 — Distillation stages (Fenske) <code>chem-03</code></a></li>
+  </ul>
+  <h2>tool_use_planning</h2>
+  <ul>
+    <li><a href="./prompts/tools-01">tools-01 — Research plan <code>tools-01</code></a></li>
+    <li><a href="./prompts/tools-02">tools-02 — Debugging plan <code>tools-02</code></a></li>
+    <li><a href="./prompts/tools-03">tools-03 — Data pipeline plan <code>tools-03</code></a></li>
+  </ul>
+  <h2>vision</h2>
+  <ul>
+    <li><a href="./prompts/vision-01">vision-01 — Labeled assembly <code>vision-01</code></a></li>
+    <li><a href="./prompts/vision-02">vision-02 — Shift log extraction <code>vision-02</code></a></li>
+    <li><a href="./prompts/vision-04">vision-04 — Chart critique <code>vision-04</code></a></li>
+  </ul>
+  <h2>generate_prompt_index</h2>
+  <ul>
     <li><a href="./prompts/index-01">index-01 — This index <code>index-01</code></a></li>
   </ul>
 </main>

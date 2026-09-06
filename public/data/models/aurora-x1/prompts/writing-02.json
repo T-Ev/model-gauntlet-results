@@ -1,14 +1,14 @@
 {
-  "id": "writing-01",
+  "id": "writing-02",
   "category": "writing",
-  "title": "Donor letter, constrained voice",
-  "promptRef": "categories/writing/PROMPT_01.md",
-  "promptExcerpt": "[redacted private prompt] Donor letter, constrained voice — see private gauntlet pack.",
+  "title": "Steelman both sides",
+  "promptRef": "categories/writing/PROMPT_02.md",
+  "promptExcerpt": "[redacted private prompt] Steelman both sides — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "subject: Lathe arrived — thank you from Harbor Bench\nletter: ...\nword_count: 418",
+  "modelOutput": "side_a: ...\nside_b: ...\nrisks: dual-use spillover",
   "scores": {
-    "overall": 4.0,
+    "overall": 4.1,
     "dimensions": [
       {
         "id": "d1",
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Voice held; 18 words over cap.",
+  "graderNotes": "Balanced briefs; slight hedge on export controls.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:00:00-04:00"
 }

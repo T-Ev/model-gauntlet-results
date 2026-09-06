@@ -11,14 +11,20 @@
   "promptIndex": {
     "path": "prompt-index.html",
     "authoredByModel": true,
-    "title": "Bramble 2 \u2014 gauntlet index"
+    "title": "Bramble 2 — gauntlet index"
   },
   "categories": [
-    "chem_eng_back_of_envelope",
-    "generate_prompt_index",
+    "writing",
     "reasoning",
+    "coding",
+    "bible_knowledge",
+    "frontend_design",
+    "game_design",
+    "cad_design",
+    "chem_eng_back_of_envelope",
+    "tool_use_planning",
     "vision",
-    "writing"
+    "generate_prompt_index"
   ],
   "prompts": [
     {
@@ -30,11 +36,211 @@
       "status": "scored"
     },
     {
+      "id": "writing-02",
+      "title": "Steelman both sides",
+      "category": "writing",
+      "href": "prompts/writing-02.json",
+      "overall": 3.5,
+      "status": "scored"
+    },
+    {
+      "id": "writing-03",
+      "title": "Technical memo to city council",
+      "category": "writing",
+      "href": "prompts/writing-03.json",
+      "overall": 3.3,
+      "status": "scored"
+    },
+    {
+      "id": "reasoning-01",
+      "title": "Constraint satisfaction",
+      "category": "reasoning",
+      "href": "prompts/reasoning-01.json",
+      "overall": 3.4,
+      "status": "scored"
+    },
+    {
+      "id": "reasoning-02",
+      "title": "Causal graph critique",
+      "category": "reasoning",
+      "href": "prompts/reasoning-02.json",
+      "overall": 3.2,
+      "status": "scored"
+    },
+    {
       "id": "reasoning-04",
       "title": "Fermi estimate with bounds",
       "category": "reasoning",
       "href": "prompts/reasoning-04.json",
       "overall": 3.6,
+      "status": "scored"
+    },
+    {
+      "id": "coding-01",
+      "title": "Implement from spec",
+      "category": "coding",
+      "href": "prompts/coding-01.json",
+      "overall": 3.7,
+      "status": "scored"
+    },
+    {
+      "id": "coding-02",
+      "title": "Debug",
+      "category": "coding",
+      "href": "prompts/coding-02.json",
+      "overall": 3.5,
+      "status": "scored"
+    },
+    {
+      "id": "coding-03",
+      "title": "API design",
+      "category": "coding",
+      "href": "prompts/coding-03.json",
+      "overall": 3.4,
+      "status": "scored"
+    },
+    {
+      "id": "bible-01",
+      "title": "Synoptic difference (recall + care)",
+      "category": "bible_knowledge",
+      "href": "prompts/bible-01.json",
+      "overall": 3.5,
+      "status": "scored"
+    },
+    {
+      "id": "bible-02",
+      "title": "Prophetic critique (interpretation)",
+      "category": "bible_knowledge",
+      "href": "prompts/bible-02.json",
+      "overall": 3.3,
+      "status": "scored"
+    },
+    {
+      "id": "bible-03",
+      "title": "Pauline argument structure",
+      "category": "bible_knowledge",
+      "href": "prompts/bible-03.json",
+      "overall": 3.6,
+      "status": "scored"
+    },
+    {
+      "id": "frontend-01",
+      "title": "Distinctive landing (anti-slop)",
+      "category": "frontend_design",
+      "href": "prompts/frontend-01.json",
+      "overall": 3.6,
+      "status": "scored"
+    },
+    {
+      "id": "frontend-02",
+      "title": "Component API",
+      "category": "frontend_design",
+      "href": "prompts/frontend-02.json",
+      "overall": 3.4,
+      "status": "scored"
+    },
+    {
+      "id": "frontend-03",
+      "title": "Accessibility remediation plan",
+      "category": "frontend_design",
+      "href": "prompts/frontend-03.json",
+      "overall": 3.5,
+      "status": "scored"
+    },
+    {
+      "id": "game-01",
+      "title": "Core loop",
+      "category": "game_design",
+      "href": "prompts/game-01.json",
+      "overall": 3.5,
+      "status": "scored"
+    },
+    {
+      "id": "game-02",
+      "title": "Economy",
+      "category": "game_design",
+      "href": "prompts/game-02.json",
+      "overall": 3.3,
+      "status": "scored"
+    },
+    {
+      "id": "game-03",
+      "title": "Level beat sheet",
+      "category": "game_design",
+      "href": "prompts/game-03.json",
+      "overall": 3.6,
+      "status": "scored"
+    },
+    {
+      "id": "cad-01",
+      "title": "GD&T callouts",
+      "category": "cad_design",
+      "href": "prompts/cad-01.json",
+      "overall": 3.2,
+      "status": "scored"
+    },
+    {
+      "id": "cad-02",
+      "title": "Mechanism concept",
+      "category": "cad_design",
+      "href": "prompts/cad-02.json",
+      "overall": 3.4,
+      "status": "scored"
+    },
+    {
+      "id": "cad-03",
+      "title": "Sheet metal DFM",
+      "category": "cad_design",
+      "href": "prompts/cad-03.json",
+      "overall": 3.3,
+      "status": "scored"
+    },
+    {
+      "id": "chem-01",
+      "title": "Heat exchanger duty",
+      "category": "chem_eng_back_of_envelope",
+      "href": "prompts/chem-01.json",
+      "overall": 3.3,
+      "status": "scored"
+    },
+    {
+      "id": "chem-02",
+      "title": "Reactor sizing Fermi",
+      "category": "chem_eng_back_of_envelope",
+      "href": "prompts/chem-02.json",
+      "overall": 3.4,
+      "status": "scored"
+    },
+    {
+      "id": "chem-03",
+      "title": "Distillation stages (Fenske)",
+      "category": "chem_eng_back_of_envelope",
+      "href": "prompts/chem-03.json",
+      "overall": 3.2,
+      "status": "scored"
+    },
+    {
+      "id": "tools-01",
+      "title": "Research plan",
+      "category": "tool_use_planning",
+      "href": "prompts/tools-01.json",
+      "overall": 3.5,
+      "status": "scored"
+    },
+    {
+      "id": "tools-02",
+      "title": "Debugging plan",
+      "category": "tool_use_planning",
+      "href": "prompts/tools-02.json",
+      "overall": 3.4,
+      "status": "scored"
+    },
+    {
+      "id": "tools-03",
+      "title": "Data pipeline plan",
+      "category": "tool_use_planning",
+      "href": "prompts/tools-03.json",
+      "overall": 3.3,
       "status": "scored"
     },
     {
@@ -46,19 +252,19 @@
       "status": "scored"
     },
     {
+      "id": "vision-02",
+      "title": "Shift log extraction",
+      "category": "vision",
+      "href": "prompts/vision-02.json",
+      "overall": 3.4,
+      "status": "scored"
+    },
+    {
       "id": "vision-04",
       "title": "Chart critique",
       "category": "vision",
       "href": "prompts/vision-04.json",
       "overall": 4.0,
-      "status": "scored"
-    },
-    {
-      "id": "chem-01",
-      "title": "Heat exchanger duty",
-      "category": "chem_eng_back_of_envelope",
-      "href": "prompts/chem-01.json",
-      "overall": 3.3,
       "status": "scored"
     },
     {

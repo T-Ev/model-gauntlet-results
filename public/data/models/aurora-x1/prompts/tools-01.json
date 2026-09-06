@@ -1,14 +1,14 @@
 {
-  "id": "writing-01",
-  "category": "writing",
-  "title": "Donor letter, constrained voice",
-  "promptRef": "categories/writing/PROMPT_01.md",
-  "promptExcerpt": "[redacted private prompt] Donor letter, constrained voice — see private gauntlet pack.",
+  "id": "tools-01",
+  "category": "tool_use_planning",
+  "title": "Research plan",
+  "promptRef": "categories/tool_use_planning/PROMPT_01.md",
+  "promptExcerpt": "[redacted private prompt] Research plan — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "subject: Lathe arrived — thank you from Harbor Bench\nletter: ...\nword_count: 418",
+  "modelOutput": "1 search → 2 fetch → 3 synthesize",
   "scores": {
-    "overall": 4.0,
+    "overall": 4.1,
     "dimensions": [
       {
         "id": "d1",
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Voice held; 18 words over cap.",
+  "graderNotes": "Tools sequenced well.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:00:00-04:00"
 }

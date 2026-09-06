@@ -2,11 +2,11 @@
   "id": "vision-04",
   "category": "vision",
   "title": "Chart critique",
-  "promptRef": "categories/vision/PROMPT.md",
-  "promptExcerpt": "[redacted private prompt] Chart critique \u2014 see private gauntlet pack.",
+  "promptRef": "categories/vision/PROMPT_04.md",
+  "promptExcerpt": "[redacted private prompt] Chart critique — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": "/fixtures/04_misleading_chart.png",
-  "modelOutput": "relative_change: -6.43%\naxis_note: not zero-based (3.8\u20135.2)",
+  "modelOutput": "relative_change: -6.43%\naxis_note: not zero-based (3.8–5.2)",
   "scores": {
     "overall": 4.5,
     "dimensions": [
@@ -31,7 +31,7 @@
       {
         "id": "d4",
         "label": "Quaternary",
-        "score": 4,
+        "score": 5,
         "max": 5
       }
     ]
