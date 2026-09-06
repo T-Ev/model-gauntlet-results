@@ -3,23 +3,23 @@
   "category": "generate_prompt_index",
   "title": "Prompt index page",
   "promptRef": "categories/generate_prompt_index/PROMPT.md",
-  "promptExcerpt": "[redacted private prompt] Prompt index page \u2014 see private gauntlet pack.",
+  "promptExcerpt": "[redacted private prompt] Prompt index page — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "<!DOCTYPE html>...\n(bramble variant)",
+  "modelOutput": "<!DOCTYPE html>...",
   "scores": {
     "overall": 3.5,
     "dimensions": [
       {
         "id": "d1",
         "label": "Primary",
-        "score": 4,
+        "score": 3,
         "max": 5
       },
       {
         "id": "d2",
         "label": "Secondary",
-        "score": 3,
+        "score": 4,
         "max": 5
       },
       {
@@ -31,12 +31,12 @@
       {
         "id": "d4",
         "label": "Quaternary",
-        "score": 4,
+        "score": 3,
         "max": 5
       }
     ]
   },
-  "graderNotes": "Valid links; denser styling.",
+  "graderNotes": "Links ok; sparse intro.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:30:00-04:00"
 }

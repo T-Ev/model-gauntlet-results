@@ -1,14 +1,14 @@
 {
-  "id": "reasoning-04",
-  "category": "reasoning",
-  "title": "Fermi estimate with bounds",
-  "promptRef": "categories/reasoning/PROMPT_04.md",
-  "promptExcerpt": "[redacted private prompt] Fermi estimate with bounds — see private gauntlet pack.",
+  "id": "frontend-02",
+  "category": "frontend_design",
+  "title": "Component API",
+  "promptRef": "categories/frontend_design/PROMPT_02.md",
+  "promptExcerpt": "[redacted private prompt] Component API — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "base: 3.0e6\nlow: 8e5\nhigh: 9e6",
+  "modelOutput": "export function Button({...15 props})",
   "scores": {
-    "overall": 3.6,
+    "overall": 3.4,
     "dimensions": [
       {
         "id": "d1",
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Order of magnitude ok; bounds asymmetric.",
+  "graderNotes": "Too many boolean flags.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:30:00-04:00"
 }

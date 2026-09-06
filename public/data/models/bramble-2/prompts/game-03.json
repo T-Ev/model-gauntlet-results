@@ -1,12 +1,12 @@
 {
-  "id": "reasoning-04",
-  "category": "reasoning",
-  "title": "Fermi estimate with bounds",
-  "promptRef": "categories/reasoning/PROMPT_04.md",
-  "promptExcerpt": "[redacted private prompt] Fermi estimate with bounds — see private gauntlet pack.",
+  "id": "game-03",
+  "category": "game_design",
+  "title": "Level beat sheet",
+  "promptRef": "categories/game_design/PROMPT_03.md",
+  "promptExcerpt": "[redacted private prompt] Level beat sheet — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "base: 3.0e6\nlow: 8e5\nhigh: 9e6",
+  "modelOutput": "beats: rooms 1–5",
   "scores": {
     "overall": 3.6,
     "dimensions": [
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Order of magnitude ok; bounds asymmetric.",
+  "graderNotes": "Difficulty spike mid-level.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:30:00-04:00"
 }

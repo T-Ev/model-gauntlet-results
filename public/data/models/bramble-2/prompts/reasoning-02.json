@@ -1,14 +1,14 @@
 {
-  "id": "reasoning-04",
+  "id": "reasoning-02",
   "category": "reasoning",
-  "title": "Fermi estimate with bounds",
-  "promptRef": "categories/reasoning/PROMPT_04.md",
-  "promptExcerpt": "[redacted private prompt] Fermi estimate with bounds — see private gauntlet pack.",
+  "title": "Causal graph critique",
+  "promptRef": "categories/reasoning/PROMPT_02.md",
+  "promptExcerpt": "[redacted private prompt] Causal graph critique — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "base: 3.0e6\nlow: 8e5\nhigh: 9e6",
+  "modelOutput": "issues: sample size only",
   "scores": {
-    "overall": 3.6,
+    "overall": 3.2,
     "dimensions": [
       {
         "id": "d1",
@@ -19,7 +19,7 @@
       {
         "id": "d2",
         "label": "Secondary",
-        "score": 4,
+        "score": 3,
         "max": 5
       },
       {
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Order of magnitude ok; bounds asymmetric.",
+  "graderNotes": "Missed collider bias note.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:30:00-04:00"
 }
