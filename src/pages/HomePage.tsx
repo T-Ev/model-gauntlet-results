@@ -19,7 +19,7 @@ export default function HomePage() {
       <p className="muted">
         Index of models tested in the gauntlet. Click a model to open its{" "}
         <strong>model-authored</strong> prompt index (when present), then drill into
-        scored prompts. Generated {data.generatedAt}. Schema {data.schemaVersion}.
+        scored prompts (up to 3 visible per category). Generated {data.generatedAt}. Schema {data.schemaVersion}.
       </p>
       <div className="grid" style={{ marginTop: "1.25rem" }}>
         {data.models.map((m) => (

@@ -1,7 +1,24 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { loadModel, promptIndexUrl } from "../lib/api";
-import type { ModelJson } from "../lib/types";
+import type { ModelJson, ModelPromptRef } from "../lib/types";
+
+const MAX_PROMPTS_PER_CATEGORY = 3;
+
+function groupByCategory(prompts: ModelPromptRef[]): { category: string; prompts: ModelPromptRef[] }[] {
+  const order: string[] = [];
+  const map = new Map<string, ModelPromptRef[]>();
+  for (const p of prompts) {
+    const cat = p.category || "uncategorized";
+    if (!map.has(cat)) {
+      map.set(cat, []);
+      order.push(cat);
+    }
+    const bucket = map.get(cat)!;
+    if (bucket.length < MAX_PROMPTS_PER_CATEGORY) bucket.push(p);
+  }
+  return order.map((category) => ({ category, prompts: map.get(category)! }));
+}
 
 export default function ModelPage() {
   const { slug = "" } = useParams();
@@ -13,6 +30,11 @@ export default function ModelPage() {
     setIndexFailed(false);
     loadModel(slug).then(setModel).catch((e) => setErr(String(e)));
   }, [slug]);
+
+  const grouped = useMemo(
+    () => (model ? groupByCategory(model.prompts) : []),
+    [model],
+  );
 
   if (err) return <p className="err">{err}</p>;
   if (!model) return <p className="muted">Loading…</p>;
@@ -49,23 +71,27 @@ export default function ModelPage() {
       </section>
 
       <aside className="panel">
-        <h3 style={{ marginTop: 0 }}>Prompts</h3>
-        <ul className="prompt-list">
-          {model.prompts.map((p) => (
-            <li key={p.id}>
-              <Link to={`/models/${slug}/prompts/${p.id}`}>
-                <span>
-                  <span className="pill">{p.category}</span>
-                  <br />
-                  {p.title}
-                </span>
-                <span className="score" style={{ fontSize: "1.1rem" }}>
-                  {p.overall ?? "—"}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <h3 style={{ marginTop: 0 }}>Prompts by category</h3>
+        <p className="meta" style={{ marginTop: 0 }}>
+          Showing up to {MAX_PROMPTS_PER_CATEGORY} prompts per category (public site acceptance).
+        </p>
+        {grouped.map(({ category, prompts }) => (
+          <div key={category} className="category-block">
+            <h4 className="category-heading">{category}</h4>
+            <ul className="prompt-list">
+              {prompts.map((p) => (
+                <li key={p.id}>
+                  <Link to={`/models/${slug}/prompts/${p.id}`}>
+                    <span>{p.title}</span>
+                    <span className="score" style={{ fontSize: "1.1rem" }}>
+                      {p.overall ?? "—"}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
         <p className="meta" style={{ marginTop: "1rem" }}>
           Links inside the iframe use <code>./prompts/&lt;id&gt;</code>; the site list
           above is the reliable navigation for SPA routing.

@@ -45,3 +45,14 @@ table.dims { width: 100%; border-collapse: collapse; }
 table.dims th, table.dims td { text-align: left; padding: 0.4rem 0.3rem; border-bottom: 1px solid var(--line); }
 .fixture { max-width: 100%; border-radius: 10px; border: 1px solid var(--line); }
 .err { color: #f87171; }
+
+.category-block { margin-top: 0.85rem; }
+.category-heading {
+  margin: 0.35rem 0 0.15rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  font-weight: 650;
+}
+.category-block .prompt-list li:first-child { border-top: none; }
