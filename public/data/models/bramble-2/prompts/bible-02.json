@@ -1,12 +1,12 @@
 {
-  "id": "chem-01",
-  "category": "chem_eng_back_of_envelope",
-  "title": "Heat exchanger duty",
-  "promptRef": "categories/chem_eng_back_of_envelope/PROMPT_01.md",
-  "promptExcerpt": "[redacted private prompt] Heat exchanger duty — see private gauntlet pack.",
+  "id": "bible-02",
+  "category": "bible_knowledge",
+  "title": "Prophetic critique (interpretation)",
+  "promptRef": "categories/bible_knowledge/PROMPT_02.md",
+  "promptExcerpt": "[redacted private prompt] Prophetic critique (interpretation) — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "duty: 320 kW\ncw_flow: ~18000 kg/h",
+  "modelOutput": "Amos: justice (single lens)",
   "scores": {
     "overall": 3.3,
     "dimensions": [
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Cp wrong fluid; order ok.",
+  "graderNotes": "Slid into preaching.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:30:00-04:00"
 }

@@ -1,14 +1,14 @@
 {
-  "id": "chem-01",
-  "category": "chem_eng_back_of_envelope",
-  "title": "Heat exchanger duty",
-  "promptRef": "categories/chem_eng_back_of_envelope/PROMPT_01.md",
-  "promptExcerpt": "[redacted private prompt] Heat exchanger duty — see private gauntlet pack.",
+  "id": "bible-03",
+  "category": "bible_knowledge",
+  "title": "Pauline argument structure",
+  "promptRef": "categories/bible_knowledge/PROMPT_03.md",
+  "promptExcerpt": "[redacted private prompt] Pauline argument structure — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "duty: 320 kW\ncw_flow: ~18000 kg/h",
+  "modelOutput": "structure: gospel then ethics",
   "scores": {
-    "overall": 3.3,
+    "overall": 3.6,
     "dimensions": [
       {
         "id": "d1",
@@ -19,7 +19,7 @@
       {
         "id": "d2",
         "label": "Secondary",
-        "score": 3,
+        "score": 4,
         "max": 5
       },
       {
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Cp wrong fluid; order ok.",
+  "graderNotes": "Skipped ch. 9–11 hinge.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:30:00-04:00"
 }

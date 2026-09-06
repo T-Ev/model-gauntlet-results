@@ -1,25 +1,25 @@
 {
-  "id": "chem-01",
-  "category": "chem_eng_back_of_envelope",
-  "title": "Heat exchanger duty",
-  "promptRef": "categories/chem_eng_back_of_envelope/PROMPT_01.md",
-  "promptExcerpt": "[redacted private prompt] Heat exchanger duty — see private gauntlet pack.",
+  "id": "coding-01",
+  "category": "coding",
+  "title": "Implement from spec",
+  "promptRef": "categories/coding/PROMPT_01.md",
+  "promptExcerpt": "[redacted private prompt] Implement from spec — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "duty: 320 kW\ncw_flow: ~18000 kg/h",
+  "modelOutput": "def parse(...): ...\n# longer rewrite",
   "scores": {
-    "overall": 3.3,
+    "overall": 3.7,
     "dimensions": [
       {
         "id": "d1",
         "label": "Primary",
-        "score": 3,
+        "score": 4,
         "max": 5
       },
       {
         "id": "d2",
         "label": "Secondary",
-        "score": 3,
+        "score": 4,
         "max": 5
       },
       {
@@ -31,12 +31,12 @@
       {
         "id": "d4",
         "label": "Quaternary",
-        "score": 3,
+        "score": 4,
         "max": 5
       }
     ]
   },
-  "graderNotes": "Cp wrong fluid; order ok.",
+  "graderNotes": "Works; extra deps unused.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:30:00-04:00"
 }

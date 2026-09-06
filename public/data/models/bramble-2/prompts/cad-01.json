@@ -1,14 +1,14 @@
 {
-  "id": "chem-01",
-  "category": "chem_eng_back_of_envelope",
-  "title": "Heat exchanger duty",
-  "promptRef": "categories/chem_eng_back_of_envelope/PROMPT_01.md",
-  "promptExcerpt": "[redacted private prompt] Heat exchanger duty — see private gauntlet pack.",
+  "id": "cad-01",
+  "category": "cad_design",
+  "title": "GD&T callouts",
+  "promptRef": "categories/cad_design/PROMPT_01.md",
+  "promptExcerpt": "[redacted private prompt] GD&T callouts — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "duty: 320 kW\ncw_flow: ~18000 kg/h",
+  "modelOutput": "datums A/B; loose tol",
   "scores": {
-    "overall": 3.3,
+    "overall": 3.2,
     "dimensions": [
       {
         "id": "d1",
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Cp wrong fluid; order ok.",
+  "graderNotes": "Missed MMC on hole.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:30:00-04:00"
 }

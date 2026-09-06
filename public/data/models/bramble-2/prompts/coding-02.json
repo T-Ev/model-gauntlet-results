@@ -1,14 +1,14 @@
 {
-  "id": "chem-01",
-  "category": "chem_eng_back_of_envelope",
-  "title": "Heat exchanger duty",
-  "promptRef": "categories/chem_eng_back_of_envelope/PROMPT_01.md",
-  "promptExcerpt": "[redacted private prompt] Heat exchanger duty — see private gauntlet pack.",
+  "id": "coding-02",
+  "category": "coding",
+  "title": "Debug",
+  "promptRef": "categories/coding/PROMPT_02.md",
+  "promptExcerpt": "[redacted private prompt] Debug — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "duty: 320 kW\ncw_flow: ~18000 kg/h",
+  "modelOutput": "bug: race?\nfix: retry sleep",
   "scores": {
-    "overall": 3.3,
+    "overall": 3.5,
     "dimensions": [
       {
         "id": "d1",
@@ -19,7 +19,7 @@
       {
         "id": "d2",
         "label": "Secondary",
-        "score": 3,
+        "score": 4,
         "max": 5
       },
       {
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Cp wrong fluid; order ok.",
+  "graderNotes": "Fixed symptom; root cause fuzzy.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:30:00-04:00"
 }

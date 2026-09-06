@@ -1,14 +1,14 @@
 {
-  "id": "chem-01",
+  "id": "chem-03",
   "category": "chem_eng_back_of_envelope",
-  "title": "Heat exchanger duty",
-  "promptRef": "categories/chem_eng_back_of_envelope/PROMPT_01.md",
-  "promptExcerpt": "[redacted private prompt] Heat exchanger duty — see private gauntlet pack.",
+  "title": "Distillation stages (Fenske)",
+  "promptRef": "categories/chem_eng_back_of_envelope/PROMPT_03.md",
+  "promptExcerpt": "[redacted private prompt] Distillation stages (Fenske) — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "duty: 320 kW\ncw_flow: ~18000 kg/h",
+  "modelOutput": "Nmin ≈ 8",
   "scores": {
-    "overall": 3.3,
+    "overall": 3.2,
     "dimensions": [
       {
         "id": "d1",
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Cp wrong fluid; order ok.",
+  "graderNotes": "α assumed constant silently.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:30:00-04:00"
 }

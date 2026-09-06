@@ -1,12 +1,12 @@
 {
-  "id": "chem-01",
-  "category": "chem_eng_back_of_envelope",
-  "title": "Heat exchanger duty",
-  "promptRef": "categories/chem_eng_back_of_envelope/PROMPT_01.md",
-  "promptExcerpt": "[redacted private prompt] Heat exchanger duty — see private gauntlet pack.",
+  "id": "cad-03",
+  "category": "cad_design",
+  "title": "Sheet metal DFM",
+  "promptRef": "categories/cad_design/PROMPT_03.md",
+  "promptExcerpt": "[redacted private prompt] Sheet metal DFM — see private gauntlet pack.",
   "promptPublic": false,
   "fixture": null,
-  "modelOutput": "duty: 320 kW\ncw_flow: ~18000 kg/h",
+  "modelOutput": "flange notes incomplete",
   "scores": {
     "overall": 3.3,
     "dimensions": [
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "graderNotes": "Cp wrong fluid; order ok.",
+  "graderNotes": "Grain direction ignored.",
   "grader": "TJ",
   "scoredAt": "2026-09-05T18:30:00-04:00"
 }
